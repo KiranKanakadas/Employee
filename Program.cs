@@ -17,11 +17,11 @@ namespace EmployeeRecord
                 employee.AddEmployee();
 
             }
-            /*else if (m == 2)
+            else if (m == 2)
             {
                 employee.DisplayStudents();
             }
-            else if (m == 3)
+            /*else if (m == 3)
             {
                 employee.UpdateStudent();
             }

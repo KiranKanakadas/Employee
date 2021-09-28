@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EmployeeRecord
 {
     class Employee
     {
 
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
         public string Country { get; set; }
@@ -24,7 +26,7 @@ namespace EmployeeRecord
             {
 
                 Console.WriteLine("Enter Employee Id: ");
-                string EnterId = Console.ReadLine();
+                int EnterId = int.Parse(Console.ReadLine());
                 Console.WriteLine("Enter Employee Name: ");
                 string EnterName = Console.ReadLine();
                 Console.WriteLine("Enter Employee Address: ");
@@ -59,16 +61,16 @@ namespace EmployeeRecord
         public void DisplayStudents()
         {
             Console.WriteLine("=====================================================");
-            Console.WriteLine("ld\t\tName\t\tAddress\t\tPhone\t\tCountry\t\tZip");
-            Employees.ForEach(x =>
+            Console.WriteLine("ld\t\tName\t\tAddress\t\tPhone\t\tCountry");
+            Employees.ForEach(Emp =>
             {
                 Console.WriteLine(
-                    x.Id + "\t\t" +
-                    x.Name + "\t\t" +
-                    x.Address + "\t\t" +
-                    x.Phone + "\t\t\n" +
-                    x.Country + "\t\t\n" +
-                    x.Zip + "\t\t\n"
+                    Emp.Id + "\t\t" +
+                    Emp.Name + "\t\t" +
+                    Emp.Address + "\t\t" +
+                    Emp.Phone + "\t\t" +
+                    Emp.Country + "\t\t" + 
+                    Emp.Zip + "\t\t\n"
                     );
 
             });
