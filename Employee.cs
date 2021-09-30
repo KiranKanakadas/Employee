@@ -50,9 +50,9 @@ namespace EmployeeRecord
                     });
                 Console.WriteLine("Details Added Successfully:");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                Console.WriteLine(e.ToString());
                 Console.WriteLine("Something went wrong, please try again");
                 AddEmployee();
 
@@ -60,7 +60,7 @@ namespace EmployeeRecord
         }
         public void DisplayStudents()
         {
-            Console.WriteLine("=====================================================");
+            Console.WriteLine("=========================================================================");
             Console.WriteLine("ld\t\tName\t\tAddress\t\tPhone\t\tCountry");
             Employees.ForEach(Emp =>
             {
@@ -74,7 +74,7 @@ namespace EmployeeRecord
                     );
 
             });
-            Console.WriteLine("=====================================================");
+            Console.WriteLine("=========================================================================");
         }
 
     }

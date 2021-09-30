@@ -12,28 +12,28 @@ namespace EmployeeRecord
             var menu = new Menu();
             menu.DisplayMenu();
             var m = menu.SelectMenu;
-            if (m == 1)
+            while(m != 5)
             {
-                employee.AddEmployee();
+                if (m == 1)
+                {
+                    employee.AddEmployee();
 
+                }
+                else if (m == 2)
+                {
+                    employee.DisplayStudents();
+                }
+                //else if (m == 3)
+                //{
+                //    student.UpdateStudent();
+                //}
+                //else if (m == 4)
+                //{
+                //    student.DeleteStudent();
+                //}
+                menu.DisplayMenu();
+                m = menu.SelectMenu;
             }
-            else if (m == 2)
-            {
-                employee.DisplayStudents();
-            }
-            /*else if (m == 3)
-            {
-                employee.UpdateStudent();
-            }
-            else if (m == 4)
-            {
-                employee.DeleteStudent();
-            }
-            menu.DisplayMenu();
-            m = menu.SelectMenu;*/
-
-
-
         }   
 
     }
