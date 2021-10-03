@@ -18,6 +18,7 @@ namespace EmployeeRecord
             Console.WriteLine("4.Detele Employee Detail");
             Console.WriteLine("5.Exit");
             SelectMenu = int.Parse(Console.ReadLine());
+            
 
         }
 

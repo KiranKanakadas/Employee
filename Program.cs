@@ -21,15 +21,15 @@ namespace EmployeeRecord
                 }
                 else if (m == 2)
                 {
-                    employee.DisplayStudents();
+                    employee.DisplayEmployee();
                 }
-                //else if (m == 3)
-                //{
-                //    student.UpdateStudent();
-                //}
+                else if (m == 3)
+                {
+                    employee.EditEmployee();
+                }
                 //else if (m == 4)
                 //{
-                //    student.DeleteStudent();
+                //    employee.DeleteEmployee();
                 //}
                 menu.DisplayMenu();
                 m = menu.SelectMenu;
